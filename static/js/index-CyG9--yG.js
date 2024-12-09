@@ -1,0 +1,1 @@
+import{d as o,R as t,C as n,o as r,c as p,g as c,t as i,p as u}from"./index-BpFkXeN0.js";import{u as l}from"./useDatailsInfo-DypmPfUU.js";const D=o({name:"RtDetailsInfo",__name:"index",setup(m){const e=t(),{params:a}=e,{toDatailsInfo:s}=l();return n(()=>{s(`${a.id}`,"params")}),(f,d)=>(r(),p("div",null,[c("span",null,"page-params --- "+i(u(a).id),1)]))}});export{D as default};

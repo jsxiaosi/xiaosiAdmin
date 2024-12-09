@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue-xs-admin</title>
+    <meta name="description" content="Your app description" />
+    <link rel="shortcut icon" href="/vue-xs-admin/pwa/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/vue-xs-admin/pwa/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/vue-xs-admin/pwa/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/vue-xs-admin/pwa/apple-touch-icon.png" sizes="180x180" />
+    <meta name="theme-color" content="#ffffff" />
+    <script>
+      window.process = {};
+    </script>
+
+    <style id="admin-style-root-color" type="text/css">
+      /* Theme Color */
+      html.dark:root {
+        --el-color-primary: #409eff;
+      }
+    </style>
+    <script type="module" crossorigin src="/vue-xs-admin/static/js/index-BpFkXeN0.js"></script>
+    <link rel="stylesheet" crossorigin href="/vue-xs-admin/static/css/index-mDboHPl1.css">
+  <link rel="manifest" href="/vue-xs-admin/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/vue-xs-admin/registerSW.js"></script></head>
+
+  <body>
+    <div id="app">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        html,
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .loading {
+          display: block;
+          width: 82px;
+          height: 72px;
+          color: #409eff;
+          font-size: 0;
+        }
+
+        .loading,
+        .loading > div {
+          position: relative;
+          box-sizing: border-box;
+        }
+
+        .loading.la-dark {
+          color: #333;
+        }
+
+        .loading > div {
+          display: inline-block;
+          float: none;
+          border: 0 solid currentcolor;
+          background-color: currentcolor;
+        }
+
+        .loading > div:nth-child(1) {
+          position: absolute;
+          bottom: 32%;
+          left: 18%;
+          width: 24px;
+          height: 24px;
+          transform-origin: center bottom;
+          animation: ball-climbing-dot-jump 0.6s ease-in-out infinite;
+          border-radius: 100%;
+        }
+
+        .loading > div:not(:nth-child(1)) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 24px;
+          height: 2px;
+          transform: translate(60%, 0);
+          animation: ball-climbing-dot-steps 1.8s linear infinite;
+          border-radius: 0;
+        }
+
+        .loading > div:not(:nth-child(1)):nth-child(2) {
+          animation-delay: 0ms;
+        }
+
+        .loading > div:not(:nth-child(1)):nth-child(3) {
+          animation-delay: -600ms;
+        }
+
+        .loading > div:not(:nth-child(1)):nth-child(4) {
+          animation-delay: -1200ms;
+        }
+
+        @keyframes ball-climbing-dot-jump {
+          0% {
+            transform: scale(1, 0.7);
+          }
+
+          20% {
+            transform: scale(0.7, 1.2);
+          }
+
+          40% {
+            transform: scale(1, 1);
+          }
+
+          50% {
+            bottom: 125%;
+          }
+
+          46% {
+            transform: scale(1, 1);
+          }
+
+          80% {
+            transform: scale(0.7, 1.2);
+          }
+
+          90% {
+            transform: scale(0.7, 1.2);
+          }
+
+          100% {
+            transform: scale(1, 0.7);
+          }
+        }
+
+        @keyframes ball-climbing-dot-steps {
+          0% {
+            top: 0;
+            right: 0;
+            opacity: 0;
+          }
+
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            top: 100%;
+            right: 100%;
+            opacity: 0;
+          }
+        }
+
+        @media (prefers-color-scheme: dark) {
+          html,
+          body {
+            background-color: #000;
+          }
+        }
+
+        @media (prefers-color-scheme: light) {
+          html,
+          body {
+            background-color: #fff;
+          }
+        }
+      </style>
+      <div id="html_loding" class="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script>
+      const appConfigMode = localStorage.getItem('appConfigMode');
+      if (appConfigMode) {
+        const { primaryColor } = JSON.parse(appConfigMode);
+        if (primaryColor) {
+          const loading = document.getElementById('html_loding');
+          loading.style.color = primaryColor;
+        }
+      }
+    </script>
+  </body>
+</html>
