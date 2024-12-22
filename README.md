@@ -25,7 +25,7 @@
 
 ## 简易版
 
-- [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
+- [mini-xs-admin](https://github.com/jsxiaosi/mini-xs-admin)
 
 ## Electron 版
 
