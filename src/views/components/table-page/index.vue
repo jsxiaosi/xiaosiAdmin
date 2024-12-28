@@ -127,6 +127,7 @@
           <span>表格</span>
         </div>
       </template>
+
       <Table :data="tabList" border row-key="date" :option="option">
         <template #name_header="slotData">
           <span>{{ `插槽：${slotData.customItem.label}` }}</span>
