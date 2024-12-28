@@ -33,7 +33,7 @@ import { configVisualizerPlugin } from './visualizer';
 // eslint
 // import { configEsLinterPlugin } from './eslinter'
 
-export function createVitePlugins(_isBuild = false, _configEnv: ConfigEnv) {
+export function createVitePlugins(_isBuild = false, configEnv: ConfigEnv) {
   const vitePlugins: PluginOption[] = [
     // vue({
     //   reactivityTransform: true,
@@ -63,7 +63,7 @@ export function createVitePlugins(_isBuild = false, _configEnv: ConfigEnv) {
 
   vitePlugins.push(configVueI18nPlugin());
 
-  vitePlugins.push(Inspect());
+  if (configEnv.mode !== 'test') vitePlugins.push(Inspect());
 
   vitePlugins.push(configAutoElementStylePlugin());
 

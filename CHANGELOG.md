@@ -2,6 +2,7 @@
 
 - docs: 📝 修改简易版本地址 ([842b247](https://github.com/jsxiaosi/vue-xs-admin/commit/842b247))
 - docs: 📝 英文README 简易版本描述 ([c8fc7d2](https://github.com/jsxiaosi/vue-xs-admin/commit/c8fc7d2))
+- docs: 📝 v2.0.2 changelog ([0f3becd](https://github.com/jsxiaosi/vue-xs-admin/commit/0f3becd))
 - fix(.github): 🐛 自动部署工作流分支校验 ([f155ae9](https://github.com/jsxiaosi/vue-xs-admin/commit/f155ae9))
 - fix(tailwind): 🐛 tailwind 配置文件esm ([dad740a](https://github.com/jsxiaosi/vue-xs-admin/commit/dad740a))
 - feat: ✨ 分享meta设置 ([7802c14](https://github.com/jsxiaosi/vue-xs-admin/commit/7802c14))
